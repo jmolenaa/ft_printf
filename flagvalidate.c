@@ -6,7 +6,7 @@
 /*   By: jmolenaa <jmolenaa@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/30 15:43:51 by jmolenaa      #+#    #+#                 */
-/*   Updated: 2022/11/08 17:38:25 by jmolenaa      ########   odam.nl         */
+/*   Updated: 2023/07/21 09:30:46 by jmolenaa      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	checkifzeroflagvalid(int i, const char *s, t_flags *f)
 int	checkifpoundflagvalid(int i, const char *s, t_flags *f)
 {
 	if (f->poundflag == 2)
-	{	
+	{
 		if (!(*(s + i) == 'x' || *(s + i) == 'X'))
 			return (1);
 	}
