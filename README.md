@@ -9,27 +9,10 @@ The format string contains normal characters and conversions introduced by the %
 [Supported conversions](#conversions).  
 The bonus part manages additional flags for certain conversions. [Supported flags](#flags).  
 
-## Common Instructions
+## Usage
 
-- Your project must be written in C and comply with the Norm (style guide).
-- Your functions should not quit unexpectedly and must properly free all heap-allocated memory space.
-- If necessary, submit a Makefile that compiles your source files with specific flags and rules.
-- You may create test programs to test your work, but they won't be graded.
-- Submit your work to your assigned git repository.
-
-## Mandatory part
-
-- Create a library named `libftprintf.a`.
-- Implement the `ft_printf()` function that mimics the original `printf()`.
-- Handle the following conversions: `c`, `s`, `p`, `d`, `i`, `u`, `x`, `X`, and `%`.
-
-## Bonus part
-
-- Optionally, manage additional flags: `-`, `0`, `.`, `#`, `+`, and field minimum width under all conversions.
-
-Remember that the bonus part will only be assessed if the mandatory part is completed perfectly.
-
-Once you pass this assignment, you can add your `ft_printf()` to your `libft` so you can use it in other C projects.
+Clone the project and run 'make' in the repository. For the additional functionality with flags run make bonus. This creates a library called 'libftprintf.a'.
+To use the function compile the library with your program and include the header files in the repository.
 
 ### Conversions
 
