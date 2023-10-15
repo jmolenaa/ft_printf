@@ -6,19 +6,20 @@
 /*   By: jmolenaa <jmolenaa@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/01 13:35:42 by jmolenaa      #+#    #+#                 */
-/*   Updated: 2022/11/09 07:07:20 by jmolenaa      ########   odam.nl         */
+/*   Updated: 2023/10/15 17:14:27 by jmolenaa      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <limits.h>
 
 static char	*makedecstr(int dec, t_flags *f)
 {
 	char	*decstr;
 
-	if (dec < 0 && dec != INT32_MIN)
+	if (dec < 0 && dec != INT_MIN)
 		dec = dec * (-1);
-	else if (dec == INT32_MIN)
+	else if (dec == INT_MIN)
 		return (ft_strdup("2147483648"));
 	decstr = itoabase((size_t)dec, "0123456789", 0);
 	if (!decstr)
